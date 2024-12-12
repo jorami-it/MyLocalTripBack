@@ -1,20 +1,12 @@
-# StarterJoramiAppJwt
-## Remplacer StarterJwt par le nom du projet dans:
-* (Arborescence de fichier) com.jorami.StarterJoramiAppJwt en com.jorami.projectName.
-* (Arborescence de fichier) com.jorami.StarterJoramiAppJwt en com.jorami.ProjectNameApplication (idem dans le dossier test!).
-* (pom.xml) dans les balises artifactId (l. 12) et name (l. 14).
-* [StarterJoramiAppJwt] sur le dossier racine.
-
-Enfin, File > Invalidate Caches...
+# MyLocalTripBack
 
 ## Docker
-* Adapter les différents noms avec le nom du projet dans le fichier docker-compose.yaml
 * Lancer Docker Desktop
 * Cliquer sur la double flèche verte au niveau de la première ligne (services:) ou, dans le Terminal, écrire la commande ````docker-compose up````
 * Vérifier que le container et les images soient bien créées sur Docker Desktop
 
 ## .env
-* Adapter l'URL de la base de données avec ce qui est présent dans le docker-compose.
+* Ajouter le .env à la racine du projet (contactez les contributeurs du projet).
 
 ## Créer une base de données pour le projet
 * Lancer pgAdmin4
