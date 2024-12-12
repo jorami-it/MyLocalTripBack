@@ -1,0 +1,37 @@
+services:
+  postgres:
+    #À adapter avec le nom du projet
+    container_name: postgres-starter-jorami-app-jwt
+    image: postgres
+    environment:
+      #À mettre dans le fichier .env
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /var/lib/postgresql/data
+      #À adapter avec le nom du projet
+      POSTGRES_DB: starter_jorami_app_jwt
+      volumes:
+        -postgres:/data/postgres
+      ports:
+        #public:container
+        -5432:5432
+      networks:
+        #À adapter avec le nom du projet
+        -starter-jorami-app-jwt
+      restart: unless-stopped
+  mail-dev:
+    #À adapter avec le nom du projet
+    container_name: mail-starter-jorami-app-jwt
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+
+networks:
+      #À adapter avec le nom du projet
+  starter-jorami-app-jwt:
+    driver: bridge
+
+volumes:
+  postgres:
+    driver: local
