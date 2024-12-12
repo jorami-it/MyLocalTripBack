@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jorami</groupId>
-	<artifactId>StarterJoramiAppJwt</artifactId>
+	<artifactId>MyLocalTripBack</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>StarterJoramiAppJwt</name>
-	<description>StarterJoramiAppJwt project for Spring Boot (c) Romain CHARIOT / Jérémi DUPONT / Khaled HAMMOU</description>
+	<name>MyLocalTripBack</name>
+	<description>MyLocalTrip project (c) Romain CHARIOT / Jérémi DUPONT / Khaled HAMMOU</description>
 	<url/>
 	<licenses>
 		<license/>

@@ -1,17 +1,20 @@
 # StarterJoramiAppJwt
 ## Remplacer StarterJwt par le nom du projet dans:
-* com.jorami.StarterJoramiAppJwt en com.jorami.projectName .
-* com.jorami.projectName.StarterJoramiAppJwt en com.jorami.projectname.ProjectNameApplication.
-* spring.application.name=StarterJoramiAppJwt en spring.application.name=projectName.
-* pom.xml dans les balises artifactId et name.
+* (Arborescence de fichier) com.jorami.StarterJoramiAppJwt en com.jorami.projectName.
+* (Arborescence de fichier) com.jorami.StarterJoramiAppJwt en com.jorami.ProjectNameApplication (idem dans le dossier test!).
+* (pom.xml) dans les balises artifactId (l. 12) et name (l. 14).
 * [StarterJoramiAppJwt] sur le dossier racine.
 
 Enfin, File > Invalidate Caches...
 
 ## Docker
 * Adapter les différents noms avec le nom du projet dans le fichier docker-compose.yaml
+* Lancer Docker Desktop
 * Cliquer sur la double flèche verte au niveau de la première ligne (services:) ou, dans le Terminal, écrire la commande ````docker-compose up````
 * Vérifier que le container et les images soient bien créées sur Docker Desktop
+
+## .env
+* Adapter l'URL de la base de données avec ce qui est présent dans le docker-compose.
 
 ## Créer une base de données pour le projet
 * Lancer pgAdmin4
@@ -27,7 +30,7 @@ Enfin, File > Invalidate Caches...
 * Lancer l'application
 * Lancer Postman et tester l'url POST localhost:8088/api/v1/auth/register avec comme body (raw (JSON))
 
--> Dans Postman, cliquer sur Import et y glisser le fichier StarterJoramiAppJwt.postman_collection.json, présent à la racine de ce projet
+-> Dans Postman, cliquer sur Import et y glisser le fichier Jorami.postman_collection.json, présent à la racine de ce projet
 ```
 {
     "firstname": "John",

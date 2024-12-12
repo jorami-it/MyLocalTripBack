@@ -1,7 +1,7 @@
 services:
   postgres:
     #À adapter avec le nom du projet
-    container_name: postgres-starter-jorami-app-jwt
+    container_name: postgres-my-local-trip-back
     image: postgres
     environment:
       #À mettre dans le fichier .env
@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: postgres
       PGDATA: /var/lib/postgresql/data
       #À adapter avec le nom du projet
-      POSTGRES_DB: starter_jorami_app_jwt
+      POSTGRES_DB: my_local_trip_back
       volumes:
         -postgres:/data/postgres
       ports:
@@ -17,11 +17,11 @@ services:
         -5432:5432
       networks:
         #À adapter avec le nom du projet
-        -starter-jorami-app-jwt
+        -my-local-trip-back
       restart: unless-stopped
   mail-dev:
     #À adapter avec le nom du projet
-    container_name: mail-starter-jorami-app-jwt
+    container_name: mail-my-local-trip-back
     image: maildev/maildev
     ports:
       - 1080:1080
@@ -29,7 +29,7 @@ services:
 
 networks:
       #À adapter avec le nom du projet
-  starter-jorami-app-jwt:
+  my-local-trip-back:
     driver: bridge
 
 volumes:
