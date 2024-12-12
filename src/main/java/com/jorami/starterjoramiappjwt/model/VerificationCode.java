@@ -21,8 +21,11 @@ import java.util.Date;
 public class VerificationCode extends IdentifiedModel {
 
     private String code;
+
     private Date expirationTime;
+
     private static final int EXPIRATION_TIME = 10;
+
     @OneToOne
     @JoinColumn(name = "user_id")
     private User user;

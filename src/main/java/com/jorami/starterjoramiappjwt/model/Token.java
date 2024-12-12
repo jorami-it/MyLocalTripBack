@@ -20,14 +20,19 @@ public class Token {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(unique = true, length = 500)
     public String token;
+
     @CreatedDate
     @Column(updatable = false)
     private LocalDateTime createdAt;
+
     @Column(updatable = false)
     private LocalDateTime expiredAt;
+
     public boolean revoked;
+
     public boolean expired;
 
     @ManyToOne

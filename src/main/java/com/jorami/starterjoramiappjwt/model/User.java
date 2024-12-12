@@ -36,25 +36,38 @@ public class User implements UserDetails, Principal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String firstname;
+
     private String lastname;
+
     private LocalDate birthDate;
+
     @Column(unique = true)
     private String email;
+
     private String password;
+
     private boolean accountLocked;
+
     private boolean verified;
+
     private boolean deleted;
+
     @Version
     private Long version;
+
     @Column(updatable = false)
     private String createdBy;
+
     @CreatedDate
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
+
     @LastModifiedBy
     @Column(insertable = false)
     private String modifiedBy;
+
     @LastModifiedDate
     @Column(insertable = false)
     private LocalDateTime modifiedAt;

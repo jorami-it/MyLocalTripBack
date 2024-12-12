@@ -27,20 +27,26 @@ public abstract class IdentifiedModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @CreatedBy
     @Column(updatable = false)
     private String createdBy;
+
     @CreatedDate
     @Column(updatable = false)
     private LocalDateTime createdAt;
+
     @LastModifiedBy
     @Column(insertable = false)
     private String modifiedBy;
+
     @LastModifiedDate
     @Column(insertable = false)
     private LocalDateTime modifiedAt;
+
     @JsonIgnore
     private boolean deleted;
+
     @Version
     private Long version;
 
