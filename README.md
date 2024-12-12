@@ -38,7 +38,7 @@ Enfin, File > Invalidate Caches...
 ```
     
 
-## Contributeur
+## Contributeurs
 - [Jérémi Dupont](https://github.com/jeremid)
 - [Khaled Hammou](https://github.com/khaled2510)
 - [Romain Chariot](https://github.com/NidalosMorphine)
