@@ -32,3 +32,4 @@ application:
       expiration: ${JWT_EXPIRATION}
 server:
   port: 8088
+  T
